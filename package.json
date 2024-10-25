@@ -38,7 +38,7 @@
     "@capacitor/cli": "6.1.2",
     "@types/mapbox-gl": "3.4.0",
     "@types/mapbox__mapbox-gl-geocoder": "5.0.0",
-    "@vitejs/plugin-legacy": "5.4.2",
+    "@vitejs/plugin-legacy": "5.4.3",
     "@vitejs/plugin-vue": "5.1.4",
     "@vue/eslint-config-typescript": "13.0.0",
     "@vue/test-utils": "2.4.6",
