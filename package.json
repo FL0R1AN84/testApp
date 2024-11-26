@@ -39,7 +39,7 @@
     "@types/mapbox-gl": "3.4.1",
     "@types/mapbox__mapbox-gl-geocoder": "5.0.0",
     "@vitejs/plugin-legacy": "5.4.3",
-    "@vitejs/plugin-vue": "5.2.0",
+    "@vitejs/plugin-vue": "5.2.1",
     "@vue/eslint-config-typescript": "13.0.0",
     "@vue/test-utils": "2.4.6",
     "cypress": "13.16.0",
