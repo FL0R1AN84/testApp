@@ -26,7 +26,7 @@
     "@ionic/vue": "8.4.3",
     "@ionic/vue-router": "8.4.3",
     "@mapbox/mapbox-gl-geocoder": "5.0.3",
-    "@studiometa/vue-mapbox-gl": "2.7.1",
+    "@studiometa/vue-mapbox-gl": "2.7.2",
     "@vueuse/core": "12.5.0",
     "ionicons": "7.4.0",
     "mapbox-gl": "3.9.4",
