@@ -10,7 +10,11 @@
   "packageRules": [
     {
       "matchUpdateTypes": [
-        "major"
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest"
       ],
       "automerge": true
     }
