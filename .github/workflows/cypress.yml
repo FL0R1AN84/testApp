@@ -30,4 +30,4 @@ jobs:
           wait-on-timeout: 60
 
       - name: Run Cypress tests
-        run: npm run test:e2e
+        run: npx cypress run --config-file=cypress.config.ts
