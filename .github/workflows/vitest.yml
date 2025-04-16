@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  cypress:
+  vitest:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
