@@ -35,5 +35,3 @@ npm-debug.log*
 !/android/app/src/main/AndroidManifest.xml
 /ios/*
 !/ios/App/App/Info.plist
-
-/package-lock.json
