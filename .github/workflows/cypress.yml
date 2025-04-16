@@ -1,42 +1,30 @@
 name: End-to-end tests
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  install:
-    runs-on: ubuntu-24.04
+  cypress:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Cypress install
-        uses: cypress-io/github-action@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          # Disable running of tests within install job
-          runTests: false
-          build: npm run build
+          node-version: '20'
 
-      - name: Save build folder
-        uses: actions/upload-artifact@v4
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v2
         with:
-          name: build
-          if-no-files-found: error
-          path: build
-
-  cypress-run:
-    runs-on: ubuntu-24.04
-    needs: install
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Download the build folder
-        uses: actions/download-artifact@v4
-        with:
-          name: build
-          path: build
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          start: npm start
-          browser: chrome
+          start: npm run dev
+          wait-on: 'http://localhost:5173'
+          wait-on-timeout: 60
