@@ -26,5 +26,3 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm run test:e2e
-          wait-on: 'http://localhost:5173'
-          wait-on-timeout: 60
