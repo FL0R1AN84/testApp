@@ -22,10 +22,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Cypress tests
+      - name: Start dev server
         uses: cypress-io/github-action@v2
         with:
           start: npm run dev
           wait-on: 'http://localhost:5173'
           wait-on-timeout: 60
+
+      - name: Run Cypress tests
         run: npm run test:e2e
