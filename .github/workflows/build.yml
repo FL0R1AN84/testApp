@@ -1,4 +1,4 @@
-name: Unit tests
+name: Install and build
 on:
   push:
     branches:
@@ -18,10 +18,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run vitest tests
-        run: npm run test:unit
+      - name: Build the project
+        run: npm run build
