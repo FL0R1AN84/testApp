@@ -2,6 +2,8 @@
 
 ## Android and iOS Development
 
+My playground with Vue.js, Ionic, Vitest and Cypress. Additionally with build and test workflows.
+
 ### Index
 
 - [Installation](./docs/01_installation.md)
@@ -14,3 +16,4 @@
 - [Updates](./docs/06_updates.md)
     - [Capacitor](./docs/06_updates.md#capacitor)
     - [npm-check-updates](./docs/06_updates.md#npm-check-updates)
+    - [Renovate](./docs/06_updates.md#renovate)
